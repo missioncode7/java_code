@@ -1,0 +1,51 @@
+ecommerce-microservices/
+├── inventory-service/
+│   ├── Dockerfile
+│   └── src/
+│       └── main/
+│           └── java/
+│               └── com/inventory/
+│                   ├── controller/
+│                   │   └── ProductController.java
+│                   ├── service/
+│                   │   └── ProductService.java
+│                   ├── entity/
+│                   │   └── Product.java
+│                   └── repository/
+│                       └── ProductRepository.java
+│           └── resources/
+│               └── application.yml
+├── cart-service/
+│   ├── Dockerfile
+│   └── src/
+│       └── main/
+│           └── java/
+│               └── com/cart/
+│                   ├── controller/
+│                   │   └── CartController.java
+│                   ├── service/
+│                   │   └── CartService.java
+│                   ├── entity/
+│                   │   └── CartItem.java
+│                   └── repository/
+│                       └── CartRepository.java
+│           └── resources/
+│               └── application.yml
+├── payment-service/
+│   ├── Dockerfile
+│   └── src/
+│       └── main/
+│           └── java/
+│               └── com/payment/
+│                   ├── controller/
+│                   │   └── PaymentController.java
+│                   ├── service/
+│                   │   └── PaymentService.java
+│                   ├── entity/
+│                   │   └── Payment.java
+│                   └── repository/
+│                       └── PaymentRepository.java
+│           └── resources/
+│               └── application.yml
+├── docker-compose.yml
+└── README.md
