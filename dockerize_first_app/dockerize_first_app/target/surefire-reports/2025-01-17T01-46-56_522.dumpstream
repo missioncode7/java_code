@@ -1,0 +1,5 @@
+# Created at 2025-01-17T01:46:56.680
+Boot Manifest-JAR contains absolute paths in classpath 'D:\AMIT_SB_LATEST_PROJECT\dockerize_first_app\dockerize_first_app\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

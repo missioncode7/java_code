@@ -1,0 +1,44 @@
+if you are using Google jib to dockerized your spring boot app, you can use this file to create
+your a custom docker image
+
+first thing you have to keep <packaging>jar</packaging> in pom.xml refer image-1 in static folder of this project
+                             ====================================        ========
+
+step 1: Inject the Google jib dependency in pom.xml of your project which you want to dockerized
+                   ====================
+and also check the jdk compatibility in your google jib dependency version with what ever jdk version you are using in your spring boot project
+                   =======================================================
+
+
+step 2:
+
+after that where ever you kept your project in local directory,show that path in your terminal
+and run this command: mvn package jib:dockerBuild
+             ====================================
+     OR
+run :  mvn compile jib:dockerBuild    in your terminal or Docker desktop app but
+if you are using Docker desktop app, you have to run it in the project directory
+
+step 3:  docker run -d -p 8080:8080 amitjava03/dockerize_app:0.0.1-s1
+
+ let me comprehnd the step 2 docker run command
+docker run -d -p 8080:8080 amitjava03/dockerize_app:0.0.1-s1
+-d means detached mode
+-p 8080:8080 means port mapping       -->  8080 is the container port and 8080 is the host port
+amitjava03/dockerize_app:0.0.1-s1 means image name
+
+amitjava03 ---> this the username which I created in Docker hub
+dockerize_app:0.0.1-s1 ---> this is the image name which I created in Docker hub
+0.0.1-s1 ---> this is the tag which I created in Docker hub
+
+
+GENERAL COMMANDS FOR CHANGE DIRECTORY(cd)
+
+cd .. means go to parent directory
+cd - means go to previous directory
+cd . means go to current directory
+cd / means go to root directory
+
+
+
+

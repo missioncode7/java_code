@@ -1,0 +1,8 @@
+if you are using google jib to dockerize your spring boot app, you can use this file to create
+your a custom jib image
+
+then first thing you have to keep <packaging>jar</packaging> in pom.xml
+and then run :  mvn compile jib:dockerBuild    in your terminal or Docker desktop app but
+if you are using Docker desktop app, you have to run it in the project directory
+
+

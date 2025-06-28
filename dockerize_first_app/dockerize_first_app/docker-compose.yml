@@ -1,0 +1,12 @@
+services:
+  accounts:
+    image: "dockerize_app/amitjava03:s4"
+    container_name: dockerize_first_app
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - dockerize_app
